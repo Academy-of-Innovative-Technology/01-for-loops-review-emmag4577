@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>For Loop Lab</title>
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -12,128 +11,54 @@
     <h1 class="display-5 fw-bold">JavaScript For-Loop Lab</h1>
     <p class="lead text-secondary mx-auto" style="max-width:60ch">
       Practice counting <strong>up</strong> and <strong>down</strong> with <code>for</code> loops.
-      Each card streams the results as animated chips. Use the Playground for any start/end/step.
     </p>
   </header>
 
   <div class="container pb-5">
-
-    <!-- Cards grid -->
     <div id="cards" class="row g-4 mb-5">
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Count Up 1 → 15</h2>
-							<div class="text-secondary small">start 1, end 15, step 1</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Count Up 15 → 1</h2>
-							<div class="text-secondary small">start 15, end 1, step 1</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>	
-			</div>
-		
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Count Up 1 → 30</h2>
-							<div class="text-secondary small">start 1, end 30, odd only</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Multiples of 5 (30 → 0)</h2>
-							<div class="text-secondary small">start 30, end 0, step -5, mult of 5</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Full Range −50 → 50</h2>
-							<div class="text-secondary small">start -50, end 50, step 5</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-12 col-md-6 col-xl-4">
-				<div class="card shadow-sm border-0 h-100">
-					<div class="card-body d-flex flex-column">
-						<div class="mb-2">
-							<h2 class="h5 mb-1">Multiples of 2 (-50 → 50)</h2>
-							<div class="text-secondary small">start -50, end 50, step -2, step 2</div>
-						</div>
-						<div class="d-flex gap-2 mb-3">
-							<button class="btn btn-primary fw-semibold" title="Run">Run</button>
-							<button class="btn btn-outline-secondary">Reset</button>
-						</div>
-						<div class="result-row hint p-2" aria-live="polite"></div>
-					</div>
-				</div>
-			</div>
-			
-			
-		</div>
-		
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body d-flex flex-column">
+            <div class="mb-2">
+              <h2 class="h5 mb-1">Count Up 1 → 15</h2>
+              <div class="text-secondary small">start 1, end 15, step 1</div>
+            </div>
+            <div class="d-flex gap-2 mb-3">
+              <button class="btn btn-primary fw-semibold run-btn">Run</button>
+              <button class="btn btn-outline-secondary reset-btn">Reset</button>
+            </div>
+            <div class="result-row hint p-2" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-4">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body d-flex flex-column">
+            <div class="mb-2">
+              <h2 class="h5 mb-1">Count Up 15 → 1</h2>
+              <div class="text-secondary small">start 15, end 1, step 1</div>
+            </div>
+            <div class="d-flex gap-2 mb-3">
+              <button class="btn btn-primary fw-semibold run-btn">Run</button>
+              <button class="btn btn-outline-secondary reset-btn">Reset</button>
+            </div>
+            <div class="result-row hint p-2" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="card shadow-sm border-0">
       <div class="card-body p-4">
         <div class="d-flex justify-content-between align-items-start flex-wrap gap-2 mb-3">
           <div>
             <h2 class="h4 mb-1">Playground: Build Your Own Loop</h2>
-            <div class="text-secondary small">Pick start, end, and step. Optional filter & speed.</div>
           </div>
           <div class="d-flex gap-2">
             <button id="pg-run" class="btn btn-primary fw-semibold">Run</button>
             <button id="pg-reset" class="btn btn-outline-secondary">Reset</button>
           </div>
         </div>
-
         <form class="row gy-3 gx-3 align-items-end mb-3">
           <div class="col-6 col-md-3">
             <label for="pg-start" class="form-label">Start</label>
@@ -157,19 +82,62 @@
             </select>
           </div>
         </form>
-
         <div class="result-row hint p-2" id="pg-row" aria-live="polite"></div>
-
-        
       </div>
     </div>
-
-    
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <script src="script.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    function runLoop(start, end, step, filter) {
+      let arr = [];
+      if (step === 0) return arr;
+      if (start < end && step < 0) step = -step;
+      if (start > end && step > 0) step = -step;
+      for (let i = start; (step > 0 ? i <= end : i >= end); i += step) {
+        if (filter === "odd" && i % 2 === 0) continue;
+        if (filter === "even" && i % 2 !== 0) continue;
+        if (filter === "mul5" && i % 5 !== 0) continue;
+        arr.push(i);
+      }
+      return arr;
+    }
 
-  
+    document.querySelectorAll(".run-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        let card = btn.closest(".card-body");
+        let title = card.querySelector(".h5").textContent;
+        let start = parseInt(card.querySelector(".text-secondary").textContent.match(/start\s(-?\d+)/)[1]);
+        let end = parseInt(card.querySelector(".text-secondary").textContent.match(/end\s(-?\d+)/)[1]);
+        let stepMatch = card.querySelector(".text-secondary").textContent.match(/step\s(-?\d+)/);
+        let step = stepMatch ? parseInt(stepMatch[1]) : 1;
+        let filter = card.querySelector(".text-secondary").textContent.includes("odd") ? "odd" :
+                     card.querySelector(".text-secondary").textContent.includes("even") ? "even" :
+                     card.querySelector(".text-secondary").textContent.includes("mult of 5") ? "mul5" : "none";
+        let results = runLoop(start, end, step, filter);
+        card.querySelector(".result-row").textContent = results.join(", ");
+      });
+    });
+
+    document.querySelectorAll(".reset-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.closest(".card-body").querySelector(".result-row").textContent = "";
+      });
+    });
+
+    document.getElementById("pg-run").addEventListener("click", () => {
+      let start = parseInt(document.getElementById("pg-start").value);
+      let end = parseInt(document.getElementById("pg-end").value);
+      let step = parseInt(document.getElementById("pg-step").value);
+      let filter = document.getElementById("pg-filter").value;
+      let results = runLoop(start, end, step, filter);
+      document.getElementById("pg-row").textContent = results.join(", ");
+    });
+
+    document.getElementById("pg-reset").addEventListener("click", () => {
+      document.getElementById("pg-row").textContent = "";
+    });
+  });
+  </script>
 </body>
 </html>
